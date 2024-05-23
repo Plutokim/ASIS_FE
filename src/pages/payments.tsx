@@ -1,16 +1,16 @@
 import Head from "next/head";
 import dynamic from 'next/dynamic'
  
-const PaymentsListScreen = dynamic(() => import("~/components/screens/PaymentsLIST"), { ssr: false })
+const ProductsLIST = dynamic(() => import("~/components/screens/ProductsLIST"), { ssr: false })
 
 export default function Home() {
 
   return (
     <>
       <Head>
-        <title>Paymnets</title>
+        <title>Products</title>
       </Head>
-      <PaymentsListScreen />
+      <ProductsLIST />
     </>
   );
 }
